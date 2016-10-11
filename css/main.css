@@ -11,13 +11,13 @@ Author: 	George Sydney Selwyn-Brace
      margin: 0;
 }
 img {
-	width:100%;
+	max-width:100%;
 }
 html{
 	font-size: 20px;
 }
 body{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Founders Grotesk Text', sans-serif;
 }
 
 /* fixed furniture */
@@ -27,20 +27,53 @@ header{
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding:40px;
+	z-index: 200;
 }
-.logo{
-	width: 180px;
+h1{
+	font-size: 2rem;
+	font-weight: normal;
+}
+h2{
+	font-size: 1rem;
+	font-weight: normal;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.name{
 	position: fixed;
 	top: 40px;
 	left: 40px;
 }
-header h2{
-	font-size: 0.85rem;
+.navigation{
 	position: fixed;
+	top: 40px;
 	right: 40px;
-	top: 42px;
-	font-weight: normal;
+}
+
+.hero{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/landscape.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero h1{
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	transform: translate(-50%, -50%);
+
+	width: 780px;
+	color: #fff;
+	text-align: center;
+}
+.tint{
+	width: 100%;
+	height:100vh;
+	background-color: rgba(0,0,0,0.2);
 }
 
 
