@@ -1,0 +1,65 @@
+/* 
+Project: 	Blank Template
+Author: 	George Sydney Selwyn-Brace
+*/
+
+/* Defaults */
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+img {
+	width:100%;
+}
+html{
+	font-size: 20px;
+}
+body{
+	font-family: 'Libre Baskerville', serif;
+}
+
+/* fixed furniture */
+
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding:40px;
+}
+.logo{
+	width: 180px;
+	position: fixed;
+	top: 40px;
+	left: 40px;
+}
+header h2{
+	font-size: 0.85rem;
+	position: fixed;
+	right: 40px;
+	top: 42px;
+	font-weight: normal;
+}
+
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+     content: " ";
+     display: table;
+}
+.clearfix:after {
+     clear:both;
+}
+
+.is-hidden {
+     display: none;
+}
+.is-visible {
+     display: block;
+}
+
+/* Additional Style */
+
