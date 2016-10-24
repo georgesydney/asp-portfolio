@@ -2,15 +2,15 @@ $(document).ready(function(){
 
 	// console.log('it works');
 
-	$( window ).resize(function() {
+	// $( window ).resize(function() {
 		
-  		location.reload();
-	});
+ //  		location.reload();
+	// });
 
-	$('.slideshow').cycle({
+	// $('.slideshow').cycle({
 
-	speed: 500,
+	// speed: 500,
 
-	});
+	// });
 
 });

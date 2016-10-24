@@ -13,30 +13,43 @@ Author: 	George Sydney Selwyn-Brace
 img {
 	width:100%;
 }
-html{
-	font-size: 18px;
-}
-body{
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+svg{
+	width: 100%;
 }
 
 /* Type */
 
+html{
+	font-size: 20px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
 h1{
 	font-family: 'Sabon MT Std', Times, serif;
 	font-size: 2.2rem;
 	font-weight: normal;
 	line-height: 130%;
-	padding-bottom: 1.8rem;
-	margin-bottom: 1.8rem;
+
+	padding-bottom: 1.5rem;
+	margin-bottom: 2rem;
 	border-bottom: solid 1px #ccc;
 }
 h2{
 	font-size: 1rem;
-	font-weight: normal;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+}
+h3{
+	font-size: 0.7rem;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	line-height: 145%;
 }
 p{
-	font-size: 0.8rem; 
+	font-size: 1rem;
+	margin-bottom: 1rem;
+	color: #222;
+	line-height: 145%;
+	font-weight: 300;
 }
 a{
 	color: inherit;
@@ -47,13 +60,13 @@ a{
 
 header{
 	width: 100%;
-	/*border: solid 1px red;*/
 	position: fixed;
 	top: 0;
 	left: 0;
 	padding:25px 40px;
 	z-index: 250;
 	background-color: rgba(255, 255, 255, 0.7);
+	/*border: solid 1px red;*/
 }
 .logo{
 	position: absolute;
@@ -69,14 +82,40 @@ header{
 	text-align: right;
 	/*border: solid 1px green;*/
 }
+footer{
+	width: 100%;
+	background-color: #eee;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	position: relative;
+	margin-top: 10rem;
+
+}
+.footer-wrapper{
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+.footer-wrapper h3{
+	width: 30%;
+	float: left;
+	color: #777;
+}
+.logo-footer{
+	width: 40%;
+	float:left;
+	fill: #777;
+	padding-right: 120px;
+}
 
 /*Page content*/
 
-.content-wrap{
-	max-width: 800px;
+.content-block{
+	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 160px 40px;
+	margin-top: 10rem;
 }
 .full-viewport{
 	width: 100%;
