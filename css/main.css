@@ -14,21 +14,14 @@ img {
 	width:100%;
 }
 html{
-	font-size: 20px;
+	font-size: 18px;
 }
 body{
-	font-family: 'Founders Grotesk Text', sans-serif;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* fixed furniture */
+/* Type */
 
-header{
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 200;
-}
 h1{
 	font-size: 2rem;
 	font-weight: normal;
@@ -37,90 +30,44 @@ h2{
 	font-size: 1rem;
 	font-weight: normal;
 }
-h3{
-	font-size: 0.7rem;
-	font-weight: normal;
-	color: #aaa;
-	margin-top: 0.5em;
-}
 p{
-	font-size: 0.8rem;
+	font-size: 0.8rem; 
 }
 a{
 	color: inherit;
 	text-decoration: none;
 }
-.name{
+
+/* Furniture */
+
+header{
+	width: 100%;
+	/*border: solid 1px red;*/
 	position: fixed;
-	top: 40px;
+	top: 0;
+	left: 0;
+	padding:20px 40px;
+	z-index: 250;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.logo{
+	position: absolute;
+	width: 10rem;
+	top: 23px;
 	left: 40px;
 }
 .navigation{
-	position: fixed;
-	top: 40px;
-	right: 40px;
+	position: relative;
+	width: 100%;
+	top: 0;
+	right: 0;
+	text-align: right;
+	/*border: solid 1px green;*/
 }
 
 /*Page content*/
 
-.hero{
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background-image: url(../images/landscape.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.hero h1{
-	position: absolute;
-	left: 50%;
-	top: 48%;
-	transform: translate(-50%, -50%);
 
-	width: 740px;
-	color: #fff;
-	text-align: center;
-}
-.tint{
-	width: 100%;
-	height:100vh;
-	background-color: rgba(0,0,0,0.2);
-}
-
-
-
-.viewport-wrap{
-	width: 100%;
-	height: 100vh;
-	position: relative;
-}
-.left-hand-half{
-	width: 50%;
-	position: absolute;
-	left: 0;
-	bottom: 50%;
-	transform: translate(0, 50%);
-	padding: 0 20px 0 40px;
-}
-.right-hand-half{
-	width: 50%;
-	position: absolute;
-	right: 0;
-	bottom: 50%;
-	transform: translate(0, 50%);
-	padding: 0 40px 0 20px;
-}
-.center-half{
-	width: 50%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 0;
-}
-.shadow{
-	box-shadow: 2px 2px 80px #eee;
-}
 
 
 /* Clearfix */
