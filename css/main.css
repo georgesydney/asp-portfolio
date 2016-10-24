@@ -16,6 +16,9 @@ img {
 svg{
 	width: 100%;
 }
+.margin-above{
+	margin-top: 10rem;
+}
 
 /* Type */
 
@@ -36,13 +39,13 @@ h1{
 h2{
 	font-size: 1rem;
 	font-weight: 300;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.05em;
 }
 h3{
 	font-size: 0.7rem;
 	font-weight: 300;
-	letter-spacing: 0.02em;
 	line-height: 145%;
+	letter-spacing: 0.05em;
 }
 p{
 	font-size: 1rem;
@@ -50,6 +53,7 @@ p{
 	color: #222;
 	line-height: 145%;
 	font-weight: 300;
+	letter-spacing: 0.03em;
 }
 a{
 	color: inherit;
@@ -82,13 +86,32 @@ header{
 	text-align: right;
 	/*border: solid 1px green;*/
 }
+.work-wrap{
+	width: 100%;
+	background-color: #eee;
+	padding: 80px 0;
+	position: relative;
+}
+.work-module{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+.work-module:nth-child(odd){
+	padding-right: 10px;
+}
+.work-module:nth-child(even){
+	padding-left: 10px;
+}
+.work-module h3{
+	margin-top: 0.5em;
+}
 footer{
 	width: 100%;
 	background-color: #eee;
 	padding-top: 60px;
 	padding-bottom: 80px;
 	position: relative;
-	margin-top: 10rem;
 
 }
 .footer-wrapper{
@@ -115,7 +138,7 @@ footer{
 	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10rem;
+	/*border: solid 1px blue;*/
 }
 .full-viewport{
 	width: 100%;
