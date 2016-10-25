@@ -1,7 +1,8 @@
 /* 
-Project: 	Blank Template
+Project: 	A Secret Place Portfolio
 Author: 	George Sydney Selwyn-Brace
 */
+
 
 /* Defaults */
 
@@ -16,11 +17,9 @@ img {
 svg{
 	width: 100%;
 }
-.margin-above{
-	margin-top: 10rem;
-}
 
-/* Type */
+
+/* Type Defaults*/
 
 html{
 	font-size: 20px;
@@ -30,7 +29,7 @@ h1{
 	font-family: 'Sabon MT Std', Times, serif;
 	font-size: 2.2rem;
 	font-weight: normal;
-	line-height: 130%;
+	line-height: 125%;
 
 	padding-bottom: 1.5rem;
 	margin-bottom: 2rem;
@@ -51,14 +50,15 @@ p{
 	font-size: 1rem;
 	margin-bottom: 1rem;
 	color: #222;
-	line-height: 145%;
+	line-height: 140%;
 	font-weight: 300;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.01em;
 }
 a{
 	color: inherit;
 	text-decoration: none;
 }
+
 
 /* Furniture */
 
@@ -70,12 +70,11 @@ header{
 	padding:25px 40px;
 	z-index: 250;
 	background-color: rgba(255, 255, 255, 0.7);
-	/*border: solid 1px red;*/
 }
 .logo{
 	position: absolute;
-	width: 10rem;
-	top: 28px;
+	width: 200px;
+	top: 25px;
 	left: 40px;
 }
 .navigation{
@@ -84,8 +83,8 @@ header{
 	top: 0;
 	right: 0;
 	text-align: right;
-	/*border: solid 1px green;*/
 }
+
 footer{
 	width: 100%;
 	background-color: #eee;
@@ -94,7 +93,7 @@ footer{
 
 }
 .footer-wrapper{
-	width: 720px;
+	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -111,25 +110,37 @@ footer{
 	width: 50%;
 	float:left;
 	fill: #777;
-	/*padding-right: 200px;*/
 }
 .logo-footer svg{
-	width: 7.5rem;
+	width: 160px;
 }
 
-/*Page content*/
 
+/*Reusable Styles*/
+
+.cirlce{
+	border-radius: 50%;
+}
+.margin-above{
+	margin-top: 200px;
+}
 .content-block{
 	max-width: 720px;
 	margin-left: auto;
 	margin-right: auto;
-	/*border: solid 1px blue;*/
 }
 .full-viewport{
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
 }
+.grey-line{
+	border-bottom: solid 1px #ccc;
+}
+
+
+/*Page content*/
+
 #hc-glencoe{
 	background-image: url(../images/hc-glencoe.jpg);
 	background-position: top;
@@ -146,16 +157,17 @@ footer{
 	background-image: url(../images/tnc-packaging.jpg);
 	background-position: bottom;
 }
+
 .work-wrap{
 	width: 100%;
 	background-color: #eee;
-	padding: 10rem 0 5rem;
+	padding: 200px 0 100px;
 	position: relative;
 }
 .work-module{
 	width: 50%;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 .work-module:nth-child(odd){
 	padding-right: 10px;
@@ -164,7 +176,7 @@ footer{
 	padding-left: 10px;
 }
 .work-module h3{
-	margin-top: 0.5em;
+	margin-top: 10px;
 }
 
 .profile{
@@ -173,17 +185,36 @@ footer{
 	border-bottom: solid 1px #ccc;
 }
 .profile img{
-	border-radius: 50%;
 	width: 33.333%;
-	float: left;
 }
 .bio{
+	padding-top: 20px;
 	width: 66.666%;
+}
+.bio p{
+	font-size: 0.7rem;
+	line-height: 150%;
+}
+.bio h2{
+	font-weight: 500;
+	letter-spacing: 0.01em;
+}
+.portrait-left img{
 	float: left;
-	padding: 20px 0 0 40px;
+}
+.portrait-left .bio{
+	float: left;
+	padding-left: 40px;
+}
+.portrait-right img{
+	float: right;
+}
+.portrait-right .bio{
+	float: right;
+	padding-right: 40px;
 }
 
-/*Small Screen*/
+/*Medium Screen*/
 
 @media screen and (max-width: 800px){
 
@@ -193,11 +224,82 @@ footer{
 		margin-right: 40px;
 	}
 	.footer-wrapper{
-	max-width: 100%;
-	margin-left: 40px;
-	margin-right: 40px;
+		max-width: 100%;
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 
+}
+
+@media screen and (max-width: 700px){
+
+	h1{
+		font-size: 1.5rem;
+	}
+
+	.margin-above{
+		margin-top: 120px;
+	}
+
+	.profile{
+		padding-bottom: 20px;
+		margin-bottom: 40px;
+	}
+	.profile img{
+		width: 50%;
+		float: none;
+	}
+	.bio{
+		width: 100%;
+	}
+	.portrait-left img{
+		float: none;
+	}
+	.portrait-left .bio{
+		float: none;
+		padding-left: 0;
+	}
+	.portrait-right img{
+		float: none;
+	}
+	.portrait-right .bio{
+		float: none;
+		padding-right: 0;
+	}
+
+	.work-wrap{
+		padding: 120px 0 0;
+	}
+	.work-module{
+		float: none;
+		width: 100%;
+	}
+	.work-module:nth-child(odd){
+		padding: 0;
+	}
+	.work-module:nth-child(even){
+		padding: 0;
+	}
+
+	footer{
+		padding-bottom: 40px;
+	}
+	.logo-footer{
+		float: none;
+		width: 160px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.logo-footer svg{
+		width: 100%;
+	}
+	.footer-wrapper h3{
+		float: none;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+	}
 }
 
 /* Clearfix */
