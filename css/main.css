@@ -86,26 +86,6 @@ header{
 	text-align: right;
 	/*border: solid 1px green;*/
 }
-.work-wrap{
-	width: 100%;
-	background-color: #eee;
-	padding: 10rem 0 5rem;
-	position: relative;
-}
-.work-module{
-	width: 50%;
-	float: left;
-	margin-bottom: 20px;
-}
-.work-module:nth-child(odd){
-	padding-right: 10px;
-}
-.work-module:nth-child(even){
-	padding-left: 10px;
-}
-.work-module h3{
-	margin-top: 0.5em;
-}
 footer{
 	width: 100%;
 	background-color: #eee;
@@ -166,7 +146,59 @@ footer{
 	background-image: url(../images/tnc-packaging.jpg);
 	background-position: bottom;
 }
+.work-wrap{
+	width: 100%;
+	background-color: #eee;
+	padding: 10rem 0 5rem;
+	position: relative;
+}
+.work-module{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+.work-module:nth-child(odd){
+	padding-right: 10px;
+}
+.work-module:nth-child(even){
+	padding-left: 10px;
+}
+.work-module h3{
+	margin-top: 0.5em;
+}
 
+.profile{
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+	border-bottom: solid 1px #ccc;
+}
+.profile img{
+	border-radius: 50%;
+	width: 33.333%;
+	float: left;
+}
+.bio{
+	width: 66.666%;
+	float: left;
+	padding: 20px 0 0 40px;
+}
+
+/*Small Screen*/
+
+@media screen and (max-width: 800px){
+
+	.content-block{
+		max-width: 100%;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.footer-wrapper{
+	max-width: 100%;
+	margin-left: 40px;
+	margin-right: 40px;
+	}
+
+}
 
 /* Clearfix */
 .clearfix:before,
