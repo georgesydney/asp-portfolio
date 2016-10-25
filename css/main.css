@@ -6,9 +6,9 @@ Author: 	George Sydney Selwyn-Brace
 /* Defaults */
 
 * {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 img {
 	width:100%;
@@ -89,7 +89,7 @@ header{
 .work-wrap{
 	width: 100%;
 	background-color: #eee;
-	padding: 80px 0;
+	padding: 10rem 0 5rem;
 	position: relative;
 }
 .work-module{
@@ -109,7 +109,6 @@ header{
 footer{
 	width: 100%;
 	background-color: #eee;
-	padding-top: 60px;
 	padding-bottom: 80px;
 	position: relative;
 
@@ -119,17 +118,23 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	border-top: solid 1px #ccc;
+	padding-top: 40px;
 }
 .footer-wrapper h3{
-	width: 30%;
+	width: 50%;
 	float: left;
 	color: #777;
+	padding-left: 10px;
 }
 .logo-footer{
-	width: 40%;
+	width: 50%;
 	float:left;
 	fill: #777;
-	padding-right: 120px;
+	/*padding-right: 200px;*/
+}
+.logo-footer svg{
+	width: 7.5rem;
 }
 
 /*Page content*/
@@ -145,13 +150,21 @@ footer{
 	height: 100vh;
 	background-size: cover;
 }
-#linda-brothwell{
-	background-image: url(../images/hc04-linda-brothwell.jpg);
+#hc-glencoe{
+	background-image: url(../images/hc-glencoe.jpg);
+	background-position: top;
+}
+#lux-interior{
+	background-image: url(../images/lux-interior.jpg);
 	background-position: bottom;
 }
-#glencoe{
-	background-image: url(../images/hc05-glencoe.jpg);
+#tnc-gareth{
+	background-image: url(../images/tnc-gareth.jpg);
 	background-position: top;
+}
+#tnc-packaging{
+	background-image: url(../images/tnc-packaging.jpg);
+	background-position: bottom;
 }
 
 
