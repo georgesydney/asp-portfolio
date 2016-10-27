@@ -74,25 +74,33 @@ header{
 }
 .logo{
 	position: absolute;
-	width: 200px;
+	width: 180px;
 	top: 30px;
 	left: 40px;
 }
-.navigation{
+#hamburger-navigation{
 	position: absolute;
 	width: 100%;
 	top: 80px;
 	left:0;
 	background-color: rgba(255, 255, 255, 0.7);
+	border-top: solid 1px #ccc;
+	display:none;
 }
-.navigation li{
+#hamburger-navigation li{
 	list-style: none;
 	padding: 20px 40px;
 	font-weight: 300;
 	border-bottom: solid 1px #ccc;
 }
-.navigation li:first-child{
-	border-top: solid 1px #ccc;
+#hamburger{
+	width: 30px;
+	height: 30px;
+	background-color: #777;
+	position: absolute;
+	right: 40px;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 footer{
