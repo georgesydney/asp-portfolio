@@ -64,6 +64,7 @@ a{
 
 header{
 	width: 100%;
+	height: 80px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -74,15 +75,24 @@ header{
 .logo{
 	position: absolute;
 	width: 200px;
-	top: 25px;
+	top: 30px;
 	left: 40px;
 }
 .navigation{
-	position: relative;
+	position: absolute;
 	width: 100%;
-	top: 0;
-	right: 0;
-	text-align: right;
+	top: 80px;
+	left:0;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.navigation li{
+	list-style: none;
+	padding: 20px 40px;
+	font-weight: 300;
+	border-bottom: solid 1px #ccc;
+}
+.navigation li:first-child{
+	border-top: solid 1px #ccc;
 }
 
 footer{
@@ -122,7 +132,7 @@ footer{
 	border-radius: 50%;
 }
 .margin-above{
-	margin-top: 200px;
+	margin-top: 160px;
 }
 .content-block{
 	max-width: 720px;
@@ -134,10 +144,6 @@ footer{
 	height: 100vh;
 	background-size: cover;
 }
-.grey-line{
-	border-bottom: solid 1px #ccc;
-}
-
 
 /*Page content*/
 
@@ -145,17 +151,13 @@ footer{
 	background-image: url(../images/hc-glencoe.jpg);
 	background-position: top;
 }
-#lux-interior{
-	background-image: url(../images/lux-interior.jpg);
-	background-position: bottom;
-}
 #tnc-gareth{
 	background-image: url(../images/tnc-gareth.jpg);
 	background-position: top;
 }
-#tnc-packaging{
-	background-image: url(../images/tnc-packaging.jpg);
-	background-position: bottom;
+#tnc-decorex{
+	background-image: url(../images/tnc-decorex.jpg);
+	background-position: center;
 }
 
 .work-wrap{
@@ -215,7 +217,7 @@ footer{
 }
 
 /*Medium Screen*/
-
+/*
 @media screen and (max-width: 800px){
 
 	.content-block{
@@ -237,8 +239,8 @@ footer{
 		font-size: 1.5rem;
 	}
 
-	.margin-above{
-		margin-top: 120px;
+	.navigation{
+		display: none;
 	}
 
 	.profile{
@@ -300,9 +302,10 @@ footer{
 		width: 100%;
 		text-align: center;
 	}
-}
+}*/
 
 /* Clearfix */
+
 .clearfix:before,
 .clearfix:after {
      content: " ";
