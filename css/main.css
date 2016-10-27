@@ -17,31 +17,33 @@ img {
 svg{
 	width: 100%;
 }
+body{
+	margin-top: 80px;
+}
 
 
 /* Type Defaults*/
 
 html{
-	font-size: 20px;
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 h1{
 	font-family: 'Sabon MT Std', Times, serif;
-	font-size: 2.2rem;
+	font-size: 1.7rem;
 	font-weight: normal;
 	line-height: 125%;
 
-	padding-bottom: 1.5rem;
-	margin-bottom: 2rem;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
 	border-bottom: solid 1px #ccc;
 }
 h2{
 	font-size: 1rem;
-	font-weight: 300;
-	letter-spacing: 0.05em;
+	font-weight: 500;
+	letter-spacing: 0.02em;
 }
 h3{
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-weight: 300;
 	line-height: 145%;
 	letter-spacing: 0.05em;
@@ -49,7 +51,7 @@ h3{
 p{
 	font-size: 1rem;
 	margin-bottom: 1rem;
-	color: #222;
+	color: #333;
 	line-height: 140%;
 	font-weight: 300;
 	letter-spacing: 0.01em;
@@ -70,7 +72,7 @@ header{
 	left: 0;
 	padding:25px 40px;
 	z-index: 250;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 .logo{
 	position: absolute;
@@ -83,7 +85,7 @@ header{
 	width: 100%;
 	top: 80px;
 	left:0;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
 	border-top: solid 1px #ccc;
 	display:none;
 }
@@ -91,46 +93,51 @@ header{
 	list-style: none;
 	padding: 20px 40px;
 	font-weight: 300;
+	font-size: 1.2rem;
 	border-bottom: solid 1px #ccc;
 }
 #hamburger{
-	width: 30px;
-	height: 30px;
-	background-color: #777;
+	width: 20px;
+	height: 25px;
 	position: absolute;
 	right: 40px;
 	top: 50%;
 	transform: translate(0, -50%);
 }
+#visible-navigation{
+	display: none;
+}
+#visible-navigation li{
+	display:inline;
+	list-style: none;
+	padding: 0 10px;
+	font-weight: 300;
+	font-size: 1.2rem;
+	text-align: right;
+}
 
 footer{
-	width: 100%;
 	background-color: #eee;
-	padding-bottom: 80px;
-	position: relative;
-
 }
 .footer-wrapper{
-	max-width: 720px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	border-top: solid 1px #ccc;
-	padding-top: 40px;
+	padding: 0 40px 60px;
+
 }
 .footer-wrapper h3{
-	width: 50%;
-	float: left;
 	color: #777;
-	padding-left: 10px;
+	margin-top: 20px;
 }
 .logo-footer{
 	width: 50%;
-	float:left;
-	fill: #777;
+	fill: #222;
 }
 .logo-footer svg{
 	width: 160px;
+	margin-top: 40px;
 }
 
 
@@ -140,17 +147,22 @@ footer{
 	border-radius: 50%;
 }
 .margin-above{
-	margin-top: 160px;
+	margin-top: 120px;
 }
 .content-block{
-	max-width: 720px;
+	max-width: 800px;
+	width: 100%;
+	padding:0 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .full-viewport{
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 80px) ;
 	background-size: cover;
+}
+.grey-line{
+	border-bottom: solid 1px #ccc;
 }
 
 /*Page content*/
@@ -171,146 +183,108 @@ footer{
 .work-wrap{
 	width: 100%;
 	background-color: #eee;
-	padding: 200px 0 100px;
 	position: relative;
+	padding: 40px 0;
 }
 .work-module{
-	width: 50%;
-	float: left;
-	margin-bottom: 40px;
-}
-.work-module:nth-child(odd){
-	padding-right: 10px;
-}
-.work-module:nth-child(even){
-	padding-left: 10px;
+	width: 100%;
+	margin-bottom: 20px;
 }
 .work-module h3{
 	margin-top: 10px;
 }
 
 .profile{
-	padding-bottom: 40px;
-	margin-bottom: 80px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
 	border-bottom: solid 1px #ccc;
 }
 .profile img{
-	width: 33.333%;
+	width: 50%;
 }
 .bio{
 	padding-top: 20px;
-	width: 66.666%;
-}
-.bio p{
-	font-size: 0.7rem;
-	line-height: 150%;
-}
-.bio h2{
-	font-weight: 500;
-	letter-spacing: 0.01em;
-}
-.portrait-left img{
-	float: left;
-}
-.portrait-left .bio{
-	float: left;
-	padding-left: 40px;
-}
-.portrait-right img{
-	float: right;
-}
-.portrait-right .bio{
-	float: right;
-	padding-right: 40px;
 }
 
-/*Medium Screen*/
-/*
-@media screen and (max-width: 800px){
 
-	.content-block{
-		max-width: 100%;
-		margin-left: 40px;
-		margin-right: 40px;
-	}
-	.footer-wrapper{
-		max-width: 100%;
-		margin-left: 40px;
-		margin-right: 40px;
-	}
+/*Larger Screen*/
 
-}
-
-@media screen and (max-width: 700px){
+@media screen and (min-width: 700px){
 
 	h1{
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
 
-	.navigation{
+	p{
+		font-size: 1.25rem;
+	}
+	h2{
+		font-size: 1.25rem;
+	}
+	h3{
+		font-size: 0.9rem;
+	}
+
+	#hamburger{
 		display: none;
 	}
-
-	.profile{
-		padding-bottom: 20px;
-		margin-bottom: 40px;
+	#visible-navigation{
+		display: block;
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		transform: translate(0, -50%);
 	}
+
 	.profile img{
-		width: 50%;
-		float: none;
+		width: 30%;
+	}
+	.bio p{
+		font-size: 1rem;
+	}
+	.bio h2{
+		font-size: 1rem;
 	}
 	.bio{
-		width: 100%;
-	}
-	.portrait-left img{
-		float: none;
-	}
-	.portrait-left .bio{
-		float: none;
-		padding-left: 0;
+		width: 70%;
 	}
 	.portrait-right img{
-		float: none;
+		float: right;
 	}
 	.portrait-right .bio{
-		float: none;
-		padding-right: 0;
+		float: right;
+		padding-right: 40px;
+	}
+	.portrait-left img{
+		float: left;
+	}
+	.portrait-left .bio{
+		float: left;
+		padding-left: 40px;
 	}
 
-	.work-wrap{
-		padding: 120px 0 0;
-	}
 	.work-module{
-		float: none;
-		width: 100%;
-	}
-	.work-module:nth-child(odd){
-		padding: 0;
+		width: 50%;
+		float: left;
 	}
 	.work-module:nth-child(even){
-		padding: 0;
+		padding-left: 10px;
+	}
+	.work-module:nth-child(odd){
+		padding-right: 10px;
 	}
 
-	footer{
-		padding-bottom: 40px;
-	}
 	.logo-footer{
-		float: none;
-		width: 160px;
-		padding-bottom: 20px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.logo-footer svg{
-		width: 100%;
+		width: 33.333%;
+		float: left;
 	}
 	.footer-wrapper h3{
-		float: none;
-		padding: 0;
-		width: 100%;
-		text-align: center;
+		width: 33.333%;
+		float: left;
+		margin-top: 40px;
 	}
-}*/
+
+}
 
 /* Clearfix */
 
