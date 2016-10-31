@@ -18,7 +18,7 @@ svg{
 	width: 100%;
 }
 body{
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 
@@ -66,7 +66,7 @@ a{
 
 header{
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -77,13 +77,13 @@ header{
 .logo{
 	position: absolute;
 	width: 180px;
-	top: 30px;
+	top: 21px;
 	left: 40px;
 }
 #hamburger-navigation{
 	position: absolute;
 	width: 100%;
-	top: 80px;
+	top: 60px;
 	left:0;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-top: solid 1px #ccc;
@@ -98,10 +98,10 @@ header{
 }
 #hamburger{
 	width: 20px;
-	height: 25px;
+	height: 15px;
 	position: absolute;
 	right: 40px;
-	top: 50%;
+	top: 51%;
 	transform: translate(0, -50%);
 }
 #visible-navigation{
@@ -110,10 +110,15 @@ header{
 #visible-navigation li{
 	display:inline;
 	list-style: none;
-	padding: 0 10px;
+	padding-left: 10px;
 	font-weight: 300;
 	font-size: 1.2rem;
 	text-align: right;
+	color: #777;
+	transition: 0.3s ease;
+}
+#visible-navigation li:hover{
+	color: #000;
 }
 
 footer{
@@ -147,7 +152,7 @@ footer{
 	border-radius: 50%;
 }
 .margin-above{
-	margin-top: 120px;
+	margin-top: 100px;
 }
 .content-block{
 	max-width: 800px;
@@ -158,7 +163,7 @@ footer{
 }
 .full-viewport{
 	width: 100%;
-	height: calc(100vh - 80px) ;
+	height: calc(100vh - 60px) ;
 	background-size: cover;
 }
 .grey-line{
