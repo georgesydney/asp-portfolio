@@ -10,6 +10,7 @@ Author: 	George Sydney Selwyn-Brace
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: 0.5s ease;
 }
 img {
 	width:100%;
@@ -20,7 +21,9 @@ svg{
 body{
 	margin-top: 60px;
 }
-
+a img:hover{
+	opacity: 0.7;
+}
 
 /* Type Defaults*/
 
@@ -80,23 +83,26 @@ header{
 	top: 21px;
 	left: 40px;
 }
-#hamburger-navigation{
+.logo:hover{
+	fill: #777;
+}
+.hamburger-navigation{
 	position: absolute;
 	width: 100%;
 	top: 60px;
 	left:0;
 	background-color: rgba(255, 255, 255, 0.9);
-	border-top: solid 1px #ccc;
+	border-top: solid 1px #eee;
 	display:none;
 }
-#hamburger-navigation li{
+.hamburger-navigation li{
 	list-style: none;
 	padding: 20px 40px;
 	font-weight: 300;
 	font-size: 1.2rem;
-	border-bottom: solid 1px #ccc;
+	border-bottom: solid 1px #eee;
 }
-#hamburger{
+.hamburger{
 	width: 20px;
 	height: 15px;
 	position: absolute;
@@ -104,20 +110,20 @@ header{
 	top: 51%;
 	transform: translate(0, -50%);
 }
-#visible-navigation{
+.visible-navigation{
 	display: none;
 }
-#visible-navigation li{
+.visible-navigation li{
 	display:inline;
 	list-style: none;
-	padding-left: 10px;
+	padding-left: 15px;
 	font-weight: 300;
 	font-size: 1.2rem;
 	text-align: right;
 	color: #777;
-	transition: 0.3s ease;
+	letter-spacing: 0.03em;
 }
-#visible-navigation li:hover{
+.visible-navigation li:hover{
 	color: #000;
 }
 
@@ -126,6 +132,7 @@ footer{
 }
 .footer-wrapper{
 	width: 100%;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -152,7 +159,7 @@ footer{
 	border-radius: 50%;
 }
 .margin-above{
-	margin-top: 100px;
+	margin-top: 80px;
 }
 .content-block{
 	max-width: 800px;
@@ -168,19 +175,29 @@ footer{
 }
 .grey-line{
 	border-bottom: solid 1px #ccc;
+	margin: 0 40px;
+}
+.anchor{
+	margin-top: 20px;
+	margin-bottom: 60px;
 }
 
 /*Page content*/
 
-#hc-glencoe{
+.hc-issues{
+	background-image: url(../images/hc-issues.jpg);
+	background-position: 30% 50%;
+}
+
+.hc-glencoe{
 	background-image: url(../images/hc-glencoe.jpg);
 	background-position: top;
 }
-#tnc-gareth{
+.tnc-gareth{
 	background-image: url(../images/tnc-gareth.jpg);
 	background-position: top;
 }
-#tnc-decorex{
+.tnc-decorex{
 	background-image: url(../images/tnc-decorex.jpg);
 	background-position: center;
 }
@@ -195,8 +212,10 @@ footer{
 	width: 100%;
 	margin-bottom: 20px;
 }
+
 .work-module h3{
 	margin-top: 10px;
+	color: #777;
 }
 
 .profile{
@@ -209,6 +228,17 @@ footer{
 }
 .bio{
 	padding-top: 20px;
+}
+.graphics-box{
+	width: 100%;
+	padding: 200px 40px;
+	background-color: #fafafa;
+}
+.graphics-box div{
+	width: 100%;
+	max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -230,15 +260,21 @@ footer{
 		font-size: 0.9rem;
 	}
 
-	#hamburger{
+	.hamburger{
 		display: none;
 	}
-	#visible-navigation{
+	.visible-navigation{
 		display: block;
 		position: absolute;
 		right: 40px;
 		top: 50%;
 		transform: translate(0, -50%);
+	}
+	.margin-above{
+		margin-top: 160px;
+	}
+	.anchor{
+		margin-top: 100px;
 	}
 
 	.profile img{
@@ -268,6 +304,10 @@ footer{
 		padding-left: 40px;
 	}
 
+/*	.graphics-box{
+		padding: 240px 40px; 
+	}
+*/
 	.work-module{
 		width: 50%;
 		float: left;
@@ -287,6 +327,7 @@ footer{
 		width: 33.333%;
 		float: left;
 		margin-top: 40px;
+		font-size: 0.8rem;
 	}
 
 }

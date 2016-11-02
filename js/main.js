@@ -1,14 +1,14 @@
 $(document).ready(function(){
-	$('#hamburger').click(function() {
-		$('#hamburger-navigation').slideToggle("slow", function(){
+	$('.hamburger').click(function() {
+		$('.hamburger-navigation').slideToggle("slow", function(){
 		});
 	});
 
-	$('#content').click(function(){
+	$('.content').click(function(){
 
-		if ($('#hamburger-navigation:visible')) {
+		if ($('.hamburger-navigation:visible')) {
 
-			$('#hamburger-navigation').hide();
+			$('.hamburger-navigation').hide();
 
 		} else {}
 
