@@ -14,6 +14,18 @@ $(document).ready(function(){
 
 	});
 
+	$('#colorway-1').on('click', function(){
+		$('#tnc-logotype').attr('class', 'graphics-box margin-above colorway-1');
+	});
+
+	$('#colorway-2').on('click', function(){
+		$('#tnc-logotype').attr('class', 'graphics-box margin-above colorway-2');
+	});
+
+	$('#colorway-3').on('click', function(){
+		$('#tnc-logotype').attr('class', 'graphics-box margin-above colorway-3');
+	});
+
 	$(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
 	    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

@@ -10,7 +10,6 @@ Author: 	George Sydney Selwyn-Brace
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    transition: 0.5s ease;
 }
 img {
 	width:100%;
@@ -170,7 +169,7 @@ footer{
 }
 .full-viewport{
 	width: 100%;
-	height: calc(100vh - 60px) ;
+	height: calc(100vh - 60px);
 	background-size: cover;
 }
 .grey-line{
@@ -229,10 +228,15 @@ footer{
 .bio{
 	padding-top: 20px;
 }
+
+.colorway-picker{
+	position: relative;
+	transition: 0.5s linear;
+}
 .graphics-box{
 	width: 100%;
 	padding: 200px 40px;
-	background-color: #fafafa;
+	transition: 0.5s ease;
 }
 .graphics-box div{
 	width: 100%;
@@ -240,7 +244,51 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 }
-
+.colorway-picker ul{
+ 	position: absolute;
+ 	bottom: -40px;
+ 	left: 50%;
+ 	transform: translate(-50%, 0);
+}
+.colorway-picker li{
+	display:inline-block;
+	list-style: none;
+	border-radius: 50%;
+	border: solid 1px #ccc;
+	width: 20px;
+	height: 20px;
+	margin: 0 7px;
+}
+#colorway-1{
+	background-color: #fafafa;
+	color: #000;
+	fill: #000;
+}
+#colorway-2{
+	background-color: #7ea9be;
+	color: #fff;
+	fill: #fff;
+}
+#colorway-3{
+	background-color: #a9a096;
+	color: #fff;
+	fill: #fff;
+}
+.colorway-1{
+	background-color: #fafafa;
+	color: #000;
+	fill: #000;
+}
+.colorway-2{
+	background-color: #7ea9be;
+	color: #fff;
+	fill: #fff;
+}
+.colorway-3{
+	background-color: #a9a096;
+	color: #fff;
+	fill: #fff;
+}
 
 /*Larger Screen*/
 
@@ -304,10 +352,10 @@ footer{
 		padding-left: 40px;
 	}
 
-/*	.graphics-box{
+	.graphics-box{
 		padding: 240px 40px; 
 	}
-*/
+
 	.work-module{
 		width: 50%;
 		float: left;
