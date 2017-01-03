@@ -232,6 +232,19 @@ footer{
 .bio{
 	padding-top: 20px;
 }
+.mag-wrap{
+	width: 50%;
+	padding: 5px;
+	float: left;
+}
+.mag-block{
+	position: relative;
+	background-color: #eee;
+	padding: 30px 0;
+}
+.mag-block .content-block{
+	padding: 0 30px;
+}
 
 
 /* CSS Content */
@@ -251,6 +264,14 @@ footer{
 .ad-hero-04{
 	background-image: url(../images/ad-hero-04.jpg);
 	background-position: 10% 0%;
+}
+.d-hero-01{
+	background-image: url(../images/d-hero-01.jpg);
+	background-position: 0% 0%;	
+}
+.d-hero-02{
+	background-image: url(../images/d-hero-02.jpg);
+	background-position: center;	
 }
 .hc-issues{
 	background-image: url(../images/hc-issues.jpg);
@@ -327,9 +348,15 @@ footer{
 		padding-left: 40px;
 	}
 
-	.work-wrap{
-		padding: 80px 0 40px;
+	.mag-wrap{
+		width: 33.333%;
+		padding: 10px;
 	}
+	.mag-block{
+		position: relative;
+		padding: 100px 0;
+	}
+
 	.work-module{
 		width: 50%;
 		float: left;
@@ -384,7 +411,6 @@ footer{
 	.ad-04 .right{
 		float: right;
 	}
-
 }
 
 /* Clearfix */
