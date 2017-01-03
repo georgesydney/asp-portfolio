@@ -23,6 +23,9 @@ body{
 a img:hover{
 	opacity: 0.7;
 }
+p a:hover{
+	color: #777;
+}
 
 /* Type */
 
@@ -36,9 +39,9 @@ h1{
 	font-weight: normal;
 	line-height: 125%;
 
+	border-bottom: solid 1px #ccc;
 	padding-bottom: 1em;
 	margin-bottom: 1em;
-	border-bottom: solid 1px #ccc;
 }
 h2{
 	font-size: 0.8rem;
@@ -58,9 +61,16 @@ a{
 	color: inherit;
 	text-decoration: none;
 }
+h1 a{
+	border-bottom: solid 1px #ccc;
+}
 b{
 	font-weight: 500;
 	letter-spacing: 0.01em;
+}
+u{
+	text-decoration: none;
+	border-bottom: solid 1px #ccc;
 }
 
 
@@ -167,11 +177,6 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 }
-.full-viewport{
-	width: 100%;
-	height: calc(100vh - 60px);
-	background-size: cover;
-}
 .grey-line{
 	border-bottom: solid 1px #ccc;
 	margin: 0 40px;
@@ -181,66 +186,24 @@ footer{
 	margin-bottom: 60px;
 }
 
-/*Page content*/
 
-.hc-issues{
-	background-image: url(../images/hc-issues.jpg);
-	background-position: 30% 50%;
-}
+/* Small Screen Image Styles */
 
-.hc-glencoe{
-	background-image: url(../images/hc-glencoe.jpg);
-	background-position: top;
-}
-.tnc-gareth{
-	background-image: url(../images/tnc-gareth.jpg);
-	background-position: top;
-}
-.tnc-decorex{
-	background-image: url(../images/tnc-decorex.jpg);
-	background-position: center;
-}
 
-/* Art Direction Page */
-
-.ad-hero-01{
-	background-image: url(../images/ad-hero-01.jpg);
-	background-position: bottom;
-}
-.ad-hero-02{
-	background-image: url(../images/ad-hero-02.jpg);
-	background-position: top;
-}
-.ad-hero-03{
-	background-image: url(../images/ad-hero-03.jpg);
-	background-position: center;
-}
-.ad-block-01{
+.image-pair{
 	position: relative;
 }
-.ad-block-01 img{
+.image-pair img{
 	float: left;
 	width: 50%;
 }
-.ad-block-01 .lh{
-	padding-right: 5px;
+.full-viewport{
+	width: 100%;
+	height: calc(100vh - 60px);
+	background-size: cover;
 }
 
-.ad-block-01 .rh{
-	padding-left: 5px;
-}
-
-.ad-block-02{
-	padding: 0 5px;
-}
-
-.ad-block-02 img{
-	width: 50%;
-	float: left;
-}
-.ad-block-02 img{
-	padding: 0 5px 10px;
-}
+/*Unique Modules*/
 
 .work-wrap{
 	width: 100%;
@@ -268,6 +231,43 @@ footer{
 }
 .bio{
 	padding-top: 20px;
+}
+
+
+/* CSS Content */
+
+.ad-hero-01{
+	background-image: url(../images/ad-hero-01.jpg);
+	background-position: 35% 100%;
+}
+.ad-hero-02{
+	background-image: url(../images/ad-hero-02.jpg);
+	background-position: 20% 0%;
+}
+.ad-hero-03{
+	background-image: url(../images/ad-hero-03.jpg);
+	background-position: center;
+}
+.ad-hero-04{
+	background-image: url(../images/ad-hero-04.jpg);
+	background-position: 10% 0%;
+}
+.hc-issues{
+	background-image: url(../images/hc-issues.jpg);
+	background-position: 10% 50%;
+}
+
+.hc-glencoe{
+	background-image: url(../images/hc-glencoe.jpg);
+	background-position: top;
+}
+.tnc-gareth{
+	background-image: url(../images/tnc-gareth.jpg);
+	background-position: top;
+}
+.tnc-decorex{
+	background-image: url(../images/tnc-decorex.jpg);
+	background-position: center;
 }
 
 
@@ -303,7 +303,6 @@ footer{
 	.anchor{
 		margin-top: 100px;
 	}
-
 	.profile img{
 		width: 30%;
 	}
@@ -328,10 +327,9 @@ footer{
 		padding-left: 40px;
 	}
 
-	.graphics-box{
-		padding: 240px 40px; 
+	.work-wrap{
+		padding: 80px 0 40px;
 	}
-
 	.work-module{
 		width: 50%;
 		float: left;
@@ -354,27 +352,37 @@ footer{
 		font-size: 0.8rem;
 	}
 
-	.ad-block-01 .lh{
-		width: 50%;
-		float: left;
-	}
-	.ad-block-01 .rh{
+/*Page Specific Styles */
+
+	.ad-01 .right{
 		width: 30%;
 		position: absolute;
 		right: 0;
 		bottom: 0;
 	}
 
-	.ad-block-02{
+	.ad-02{
 		padding: 0 30px;
 	}
-
-	.ad-block-02 img{
+	.ad-02 img{
 		width: 33.333%;
 		float: left;
-	}
-	.ad-block-02 img{
 		padding: 0 10px 20px;
+	}
+	.ad-03 .right{
+		width: 30%;
+		position: absolute;
+		right: 40px;
+		top: 0;
+	}
+	.ad-04 .left{
+		width: 30%;
+		position: absolute;
+		left: 40px;
+		top: 0;
+	}
+	.ad-04 .right{
+		float: right;
 	}
 
 }
